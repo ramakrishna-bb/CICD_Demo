@@ -4,6 +4,7 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  workflow_dispatch:
     
 jobs:
   lint:
@@ -39,7 +40,7 @@ jobs:
 
   instrumentation-test:
     needs: [ unit-test ]
-    runs-on: macos-latest
+    runs-on: macos-11
     steps:
       - name: Checkout the code
         uses: actions/checkout@v2
