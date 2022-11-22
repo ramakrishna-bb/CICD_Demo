@@ -70,7 +70,7 @@ jobs:
       - name: build release
         run: bash ./gradlew assembleDebug
       - name: upload artifact to Firebase App Distribution
-        uses: wzieba/Firebase-Distribution-Github-Action@v1.2.2
+        uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
           appId: '1:465213955863:android:24dcea1ecbdfeba8d32152'
           token: '1//0gRUnjsCBsUNuCgYIARAAGBASNwF-L9IrODfw6I6Q4wPzI9J89A6Ju2xoU7Y83gldSlHADsBZPqMG1BmCH7K9dEQ_JFp3EfrYyKk'
